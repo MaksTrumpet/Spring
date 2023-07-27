@@ -1,0 +1,86 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <properties>
+    <java.version>20</java.version>
+    <maven.compiler.source>20</maven.compiler.source>
+    <maven.compiler.target>20</maven.compiler.target>
+  </properties>
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>spring.app1</groupId>
+  <artifactId>mySpringProject</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>mySpringProject Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-core</artifactId>
+      <version>6.0.11</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-beans -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-beans</artifactId>
+      <version>6.0.11</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>6.0.11</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-web</artifactId>
+      <version>6.0.11</version>
+    </dependency>
+
+
+  </dependencies>
+  <build>
+    <finalName>mySpringProject</finalName>
+
+    <!-- Set the source and target version of Java to match the version specified in the properties section -->
+    <plugins>
+
+      <!-- Set the source and target version of Java to match the version specified in the properties section -->
+      <plugin>
+
+        <!-- Specify the maven-compiler-plugin -->
+        <groupId>org.apache.maven.plugins</groupId>
+
+        <!-- Specify the maven-compiler-plugin -->
+        <artifactId>maven-compiler-plugin</artifactId>
+
+        <!-- Set the version of the maven-compiler-plugin to use -->
+        <version>3.8.1</version>
+
+        <!-- Configure the maven-compiler-plugin -->
+        <configuration>
+
+          <!-- Set the source version of Java to use -->
+          <source>${java.version}</source>
+
+          <!-- Set the target version of Java to use -->
+          <target>${java.version}</target>
+
+        </configuration>
+
+      </plugin>
+
+    </plugins>
+
+  </build>
+
+</project>
+
